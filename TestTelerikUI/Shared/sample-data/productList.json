@@ -1,0 +1,72 @@
+[
+	{
+		"ProductID": 1,
+		"ProductName": "Chai",
+		"UnitPrice": 18,
+		"UnitsInStock": 39,
+		"DeliveryOn": "1996-09-19T21:00:00.000Z"
+	},
+	{
+		"ProductID": 2,
+		"ProductName": "Chang",
+		"UnitPrice": 19,
+		"UnitsInStock": 17,
+		"DeliveryOn": "1996-08-11T21:00:00.000Z"
+	},
+	{
+		"ProductID": 3,
+		"ProductName": "Aniseed Syrup",
+		"UnitPrice": 10,
+		"UnitsInStock": 0,
+		"DeliveryOn": "1996-09-25T21:00:00.000Z"
+	},
+	{
+		"ProductID": 4,
+		"ProductName": "Chef Anton's Cajun Seasoning",
+		"UnitPrice": 22,
+		"UnitsInStock": 53,
+		"DeliveryOn": "1996-10-18T21:00:00.000Z"
+	},
+	{
+		"ProductID": 5,
+		"ProductName": "Chef Anton's Gumbo Mix",
+		"UnitPrice": 21.35,
+		"UnitsInStock": 0,
+		"DeliveryOn": "1996-08-16T21:00:00.000Z"
+	},
+	{
+		"ProductID": 6,
+		"ProductName": "Grandma's Boysenberry Spread",
+		"UnitPrice": 25,
+		"UnitsInStock": 120,
+		"DeliveryOn": "1996-10-18T21:00:00.000Z"
+	},
+	{
+		"ProductID": 7,
+		"ProductName": "Uncle Bob's Organic Dried Pears",
+		"UnitPrice": 30,
+		"UnitsInStock": 0,
+		"DeliveryOn": "1996-08-21T21:00:00.000Z"
+	},
+	{
+		"ProductID": 8,
+		"ProductName": "Northwoods Cranberry Sauce",
+		"UnitPrice": 40,
+		"UnitsInStock": 0,
+		"DeliveryOn": "1996-11-30T22:00:00.000Z"
+	},
+	{
+		"ProductID": 9,
+		"ProductName": "Mishi Kobe Niku",
+		"UnitPrice": 97,
+		"UnitsInStock": 29,
+		"DeliveryOn": "1997-02-20T22:00:00.000Z"
+	},
+	{
+		"ProductID": 10,
+		"ProductName": "Ikura",
+		"UnitPrice": 31,
+		"UnitsInStock": 31,
+		"DeliveryOn": "1996-09-04T21:00:00.000Z"
+	}
+]

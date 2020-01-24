@@ -1,0 +1,8 @@
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\bin\Debug\netstandard2.1\TestTelerikUI.Shared.deps.json
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\bin\Debug\netstandard2.1\TestTelerikUI.Shared.dll
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\bin\Debug\netstandard2.1\TestTelerikUI.Shared.pdb
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\obj\Debug\netstandard2.1\TestTelerikUI.Shared.csprojAssemblyReference.cache
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\obj\Debug\netstandard2.1\TestTelerikUI.Shared.AssemblyInfoInputs.cache
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\obj\Debug\netstandard2.1\TestTelerikUI.Shared.AssemblyInfo.cs
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\obj\Debug\netstandard2.1\TestTelerikUI.Shared.dll
+C:\Users\donch\source\repos\TestTelerikUI\TestTelerikUI\Shared\obj\Debug\netstandard2.1\TestTelerikUI.Shared.pdb

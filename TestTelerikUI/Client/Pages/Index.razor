@@ -1,0 +1,64 @@
+﻿@page "/"
+@using TestTelerikUI.Shared
+@inject HttpClient Http
+
+<TelerikGrid Data=@GridData EditMode="@GridEditMode.Inline" Height="500px"
+             Pageable="true" PageSize=@PageSize
+             OnCreate="@CreateHandler" OnDelete="@DeleteHandler" OnUpdate="@UpdateHandler">
+    <GridColumns>
+        <GridColumn Width="8%" Field=@nameof(Product.ProductId) Title="Product Id" />
+        <GridColumn Width="42%" Field=@nameof(Product.ProductName) Title="Product Name" />
+        <GridColumn Field=@nameof(Product.UnitPrice) Title="Unit Price">
+            <Template>
+                @(String.Format("{0:C2}", (context as Product).UnitPrice))
+            </Template>
+        </GridColumn>
+        <GridColumn Field=@nameof(Product.UnitsInStock) Title="Units In Stock" />
+        <GridColumn Field=@nameof(Product.DeliveryOn) Title="Delivery On">
+            <Template>
+                @((context as Product).DeliveryOn.ToShortDateString())
+            </Template>
+        </GridColumn>
+    </GridColumns>
+</TelerikGrid>
+
+
+@code {
+
+    public List<Product> GridData { get; set; }
+    public Product ProductToEdit { get; set; }
+    int PageSize = 15;
+    int lastId = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        GridData = await Http.GetJsonAsync<List<Product>>("Product");
+    }
+
+    private void CreateHandler(GridCommandEventArgs args)
+    {
+        Product product = (Product)args.Item;
+
+        product.ProductId = ++lastId;
+        GridData.Insert(0, product);
+    }
+
+    private void DeleteHandler(GridCommandEventArgs args)
+    {
+        GridData.Remove((Product)args.Item);
+    }
+
+    private void UpdateHandler(GridCommandEventArgs args)
+    {
+        Product product = (Product)args.Item;
+
+        var existing = GridData.FirstOrDefault(p => p.ProductId == product.ProductId);
+
+        if (existing != null)
+        {
+            existing.ProductName = product.ProductName;
+            existing.UnitPrice = product.UnitPrice;
+            existing.UnitsInStock = product.UnitsInStock;
+        }
+    }
+}
